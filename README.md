@@ -1,7 +1,7 @@
 # InnovaTech_Website
 Este sera el repositorio para la creacion de el website oficial de Innova Tech.
 
-## INNOVA TECH
+# INNOVA TECH
 
  <img src="IMG-20240223-WA0003.jpg" alt="logo" width="140"  height="auto" />
 
@@ -16,12 +16,12 @@ InnovaTech Nic, S.A es una empresa líder en el desarrollo de software, especial
 4- Juan Diego Morales Zeledón <br/>
 
 
-# Acerca del proyecto...
+## Acerca del proyecto...
 
 Este es el website official de  <strong>Innova Tech</strong>, estaremos abarcando la totalidad de la pagina durante el transcurso de este proyecto.
 
 
-# Tech Stack (Tecnologías):
+## Tech Stack (Tecnologías):
 
 <details>
     <summary>Princial</summary>
