@@ -24,7 +24,7 @@ Este es el website official de  <strong>Innova Tech</strong>, estaremos abarcand
 # Tech Stack (Tecnologías):
 
 <details>
-    <sumary>Princial</sumary>
+    <summary>Princial</summary>
     <ul class="lista_tecnololgia">
         <li class="lista__item">
         HTML5
@@ -39,7 +39,7 @@ Este es el website official de  <strong>Innova Tech</strong>, estaremos abarcand
 </details>
 
 <details>
-    <sumary>Control de Versiones</sumary>
+    <summary>Control de Versiones</summary>
     <ul class="lista_tecnololgia">
         <li class="lista__item">
         Git / Github
@@ -48,7 +48,7 @@ Este es el website official de  <strong>Innova Tech</strong>, estaremos abarcand
 </details>
 
 <details>
-    <sumary>Bases de Datos</sumary>
+    <summary>Bases de Datos</summary>
     <ul class="lista_tecnololgia">
         <li class="lista__item">
         MySQL 
