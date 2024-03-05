@@ -20,11 +20,12 @@ InnovaTech Nic, S.A es una empresa líder en el desarrollo de software, especial
 
 Este es el website official de  <strong>Innova Tech</strong>, estaremos abarcando la totalidad de la pagina durante el transcurso de este proyecto.
 
+Nuestra visión en Innovatech Nic, S.A es ser líderes en el mercado regional de desarrollo de software, reconocidos por nuestra excelencia en la creación de aplicaciones móviles y páginas web de alta calidad.
 
 ## Tech Stack (Tecnologías):
 
 <details>
-    <summary>Princial</summary>
+    <summary>Principal</summary>
     <ul class="lista_tecnololgia">
         <li class="lista__item">
         HTML5
