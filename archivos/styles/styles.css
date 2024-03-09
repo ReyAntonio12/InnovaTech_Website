@@ -1,0 +1,40 @@
+:root{
+    --color-rosado: #FEA096;
+    --color-rojo: #FD413B;
+    --color-amarillo: #FFA424;
+    --color-azul-oscuro: #0B253F;
+    --color-verde-amarillo: #A8E73D;
+    --color-verde: #40B76F;
+    --color-celeste: #0FC9FF;
+    --color-azul-claro: #007FEA;
+    --color-negro: #221e1e;
+    --color-blanco: #FFFFFF;
+}
+
+/* CONFIGURACIONES GENERALES */
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+/* HEADER Y MENU DE NAVEGACION */
+
+.header{
+    width: 100%;
+    height: 10rem;
+}
+
+
+/* CUERPO DE LA PAGINA */
+
+.main{
+    width: 100%;
+    padding-top: 15rem;
+}
