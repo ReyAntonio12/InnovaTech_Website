@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="archivos/styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Innova Tech | Inicio</title>
     <link rel="icon" href="archivos/img/Icono full.jpg">
     <link rel="stylesheet" href="archivos/styles/styles.css" />
+    <link rel="stylesheet" href="archivos/styles/reset.css" />
 </head>
 <body>
     <header class="header">
         <!-- Este es la parte del menu superior -->
-        <a href="#" class="logo">
-            <img src="archivos/img/InnovaTech 2.2 (1).ico" alt="Logo de InnovaTech"/>  
+        <a href="#" class="logo__link">
+            <img src="archivos/img/InnovaTech 2.2 (1).ico" alt="Logo de InnovaTech" class="logo__img"/>  
         </a>
-        <h2 class="nombre-empresa">InnovaTech</h2>
-        <nav>
+        <h2 class="nombre__empresa">InnovaTech</h2>
+        <nav class="header__nav">
             <ul class="lista__nav">
                 <li class="lista__item">
                     <a href="#" class="nav-link">Inicio</a>
@@ -36,10 +36,23 @@
         </nav>
     </header>
     <main class="main">
-        <h1 class="main__titulo">
-            Este es el cuerpo de la pagina
-        </h1>
-        <h2>KENDALL</h2>
+        <section class="main__titulo">
+            <section class="titulo__informacion">
+                <h1 class="titulo__principal">
+                    Creamos tu fujo <br> de trabajo
+                </h1>
+                <p class="titulo_desctipcion">
+                    Creamos aplicaciones web que te permiten <br>gestionar tus proyectos con facilidad
+                </p>
+                <a class="proyectos__boton" href="#">
+                    Nuestros Proyectos
+                </a>
+            </section>
+    
+            <figure class="titulo-img__contenedor">
+                <img src="archivos/img/asset1.png" alt="Desarrollador Web" class="titulo__img" />
+            </figure>
+        </section>
     </main>
     <footer>
         ©Copyright Innova Tech 2024
