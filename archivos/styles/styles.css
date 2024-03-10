@@ -9,6 +9,8 @@
     --color-azul-claro: #007FEA;
     --color-negro: #221e1e;
     --color-blanco: #FFFFFF;
+    --fondo-claro: #75F9FF;
+    --color-gris: #757575;
 }
 
 /* CONFIGURACIONES GENERALES */
@@ -19,9 +21,10 @@ html{
 
 body{
     font-size: 1.2rem;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Kanit', Arial, Helvetica, sans-serif;
     width: 100%;
     height: 100%;
+    background-color: var(--fondo-claro);
 }
 
 /* HEADER Y MENU DE NAVEGACION */
@@ -29,12 +32,92 @@ body{
 .header{
     width: 100%;
     height: 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 2.5rem;
+    justify-content: center;
 }
 
+.header__nav{
+    flex-basis: 70%;
+}
+
+.lista__nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.logo__img{
+    width: 150px;
+    height: 130px;;
+}
+
+.nombre__empresa{
+    font-size: 2.5rem;
+}
+
+.nav-link{
+    font-size: 2rem;
+    color: var(--color-azul-oscuro);
+    transition: all 300ms ease-in-out;
+}
+
+.nav-link:hover{
+    color: var(--color-azul-claro);
+}
 
 /* CUERPO DE LA PAGINA */
 
 .main{
     width: 100%;
     padding-top: 15rem;
+}
+
+.main__titulo{
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titulo__img{
+    width: 500px;
+    height: 450px;
+    border-radius: 25%;
+}
+
+.titulo__principal{
+    font-weight: 900;
+    font-size: 6rem;
+    color: var(--color-azul-oscuro);
+    padding-bottom: 1rem;
+}
+
+.titulo_desctipcion{
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--color-azul-claro);
+    padding-bottom: 2rem;
+}
+
+.proyectos__boton{
+    width: 15rem;
+    height: 6rem;
+    background-color: var(--color-verde-amarillo);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: var(--color-azul-oscuro);
+    border: 0.3rem solid var(--color-azul-oscuro);
+    border-radius: 2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.proyectos__boton:hover{
+    background-color: var(--color-amarillo);
+    box-shadow: 2px 3px 15px 2px var(--color-gris);
 }
