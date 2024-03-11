@@ -14,60 +14,142 @@
 }
 
 /* CONFIGURACIONES GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-html{
+html {
     font-size: 10px;
 }
 
 body{
-    font-size: 1.2rem;
     font-family: 'Kanit', Arial, Helvetica, sans-serif;
-    width: 100%;
     height: 100%;
-    background-color: var(--fondo-claro);
+    background-color: black;
+    background-image: url(/archivos/img/wako.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: ivory;
+    font-size: 2rem;
+}
+
+a:hover {
+    color: #A8E73D;
 }
 
 /* HEADER Y MENU DE NAVEGACION */
 
-.header{
+header {
+    position: relative;
+    padding: 0.2rem;
+}
+
+.navbar {
     width: 100%;
-    height: 10rem;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
-    padding-top: 2.5rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.header__nav{
-    flex-basis: 70%;
-}
-
-.lista__nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-}
-
-.logo__img{
-    width: 150px;
-    height: 130px;;
-}
-
-.nombre__empresa{
+.navbar .logo a {
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
-.nav-link{
-    font-size: 2rem;
-    color: var(--color-azul-oscuro);
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: #FFA424;
+    color: #FFFFFF;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
     transition: all 300ms ease-in-out;
 }
 
-.nav-link:hover{
-    color: var(--color-azul-claro);
+.action_btn:hover {
+    scale: 1.05;
+    color: #FFFFFF;
+    transition: all 300ms ease-in-out;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:active {
+    scale: 1;
+}
+/* DROPDOWN MENU */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 270px;
+}
+
+.dropdown_menu li {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+/* HERO SECTION */
+section#hero {
+    height: calc(100vh -60px);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffff;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem
 }
 
 /* CUERPO DE LA PAGINA */
@@ -120,4 +202,88 @@ body{
 .proyectos__boton:hover{
     background-color: var(--color-amarillo);
     box-shadow: 2px 3px 15px 2px var(--color-gris);
+}
+
+/* TARJETA DE PRESENTACIÓN */
+
+.tarjetas {
+    width: 110%;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: floralwhite;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 6px 20px rgba(0,0,0,0.4);
+    transform:  translateY(-3%);
+}
+
+.card img {
+    width: 200% ;
+    height: 320px;
+}
+
+.card .contenido {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p {
+    line-height: 1.6;
+    color: #6e6e6e;
+} 
+
+.card .contenido h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #FEA096;
+    border: 1px solid #FEA096;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover {
+    background: #FEA096;
+    color: #FFFFFF;
+}
+
+/* RESPONSIVE DESING */
+@media(max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
 }
