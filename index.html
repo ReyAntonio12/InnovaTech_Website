@@ -43,22 +43,6 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda fugiat vitae, officia, velit tempore, id doloribus asperiores similique quisquam porro eligendi ad sapiente esse sed sint modi aut nesciunt laborum?</p>
         </section>
     </main>
-    <!--JAVASCRIPT COMANDOS-->
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-
-        toggleBtn.onclick = function (params) {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains ('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-    </script>
-    <!--FIN DE JAVASCRIPT COMANDOS-->
 
         <!--Fin del menu superior-->
     <main class="main">
@@ -161,5 +145,8 @@
                 <p class="copy"><span class="copyl">©</span> 2024 Innova-Tech, Inc.. Todos los derechos reservados</p>
         </div>
     </footer>
+       <!--JAVASCRIPT COMANDOS-->
+       <script src="archivos/js/main.js"></script>
+       <!--FIN DE JAVASCRIPT COMANDOS-->
 </body>
 </html>
