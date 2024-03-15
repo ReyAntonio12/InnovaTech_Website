@@ -343,7 +343,7 @@ section#wako {
 }
 
 .footer {
-    background-color: #2b2a2a;
+    background-color: var(--DarkSlateTeal);
     padding: 2rem 0 0 0;
 }
 
@@ -366,7 +366,7 @@ section#wako {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: var(--PaleGreen);
     height: 3px;
     box-sizing: border-box;
     width: 80px;
@@ -406,7 +406,7 @@ section#wako {
 }
 
 .footer-col .social-links a:hover {
-    color: #24262b;
+    color: var(--Teal);
     background-color: #FFFFFF;
     transform: translateY(-20%);
 }
