@@ -1,16 +1,12 @@
 :root{
-    --color-rosado: #FEA096;
-    --color-rojo: #FD413B;
-    --color-amarillo: #FFA424;
-    --color-azul-oscuro: #0B253F;
-    --color-verde-amarillo: #A8E73D;
-    --color-verde: #40B76F;
-    --color-celeste: #0FC9FF;
-    --color-azul-claro: #007FEA;
-    --color-negro: #221e1e;
-    --color-blanco: #FFFFFF;
-    --fondo-claro: #75F9FF;
-    --color-gris: #757575;
+    /* Paleta Principal */
+    --LightCyan: #D4F0FC;
+    --LightSkyBlue: #89D6FB;
+    --Teal: #02577A;
+    --DarkSlateTeal: #01303F;
+    /* Paleta Secundaria */
+    --MediumTurquoise: #45C4B0;
+    --PaleGreen: #9AEBA3;
 }
 
 /* CONFIGURACIONES GENERALES */
@@ -27,7 +23,7 @@ html {
 body{
     font-family: 'Kanit', Arial, Helvetica, sans-serif;
     height: 100%;
-    background-color: black;
+    background-color: #dfdede;
 }
 
 li {
@@ -41,14 +37,15 @@ a {
 }
 
 a:hover {
-    color: #A8E73D;
+    color: var(--LightSkyBlue);
+    transition: all 230ms ease-in-out;
 }
 
 /* HEADER Y MENU DE NAVEGACION */
 
 header {
     position: relative;
-    padding: 0.2rem;
+    padding: 1.7rem;
 }
 
 .navbar {
@@ -62,26 +59,26 @@ header {
 }
 
 .navbar .logo a {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: bold;
 }
 
 .navbar .links{
     display: flex;
-    gap: 2rem;
+    gap: 3.5rem;
 }
 
 .navbar .toggle_btn {
-    color: #FFFFFF;
+    color: #D4F0FC;
     font-size: 2.5rem;
     cursor: pointer;
     display: none;
 }
 
 .action_btn {
-    background-color: #FFA424;
+    background-color: var(--MediumTurquoise);
     color: #FFFFFF;
-    padding: 0.5rem 1.2rem;
+    padding: 0.5rem 1.5rem;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -137,7 +134,7 @@ header {
 /* HERO SECTION AND HEADER*/
 header {
     min-height: 90vh;
-    background: linear-gradient(#fa9847e0,rgba(62, 120, 185, 0.8)), url(/archivos/img/wako.avif);
+    background: linear-gradient(#012f3f59,rgba(147, 216, 213, 0.356)), url(/archivos/img/wako.avif);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -158,27 +155,41 @@ section#hero {
 }
 
 #hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem
+    font-size: 5rem;
+    text-shadow: var(--MediumTurquoise) 2px 2px 20px;
+    margin-bottom: 4.2rem
 }
+
+#hero p {
+    font-size: 2.1rem;
+    margin-bottom: 4rem
+}
+
+#hero span{
+    font-family: "Kaushan Script", cursive;
+    font-size: 2.6rem;
+}
+
 
 /* HOME SECTION */
  .about-section {
-    background: url(/archivos/img/defaul\ 6.jpeg) no-repeat left;
-    background-size: 50%;
-    background-color: #9b9a9a;
+    border-radius: 100rem;
+    margin-left: 8rem;
+    background: url(/archivos/img/Icono_full-transformed.jpeg) no-repeat left;
+    background-size: 34%;
+/*     background-color: #012f3f; */
     overflow: hidden;
-    padding: 120px 0;
- }
+    padding: 45px 0;
+}
 
  .inner-container {
     width: 55%;
-    float: right;
+    margin-left: 40rem;
     background-color: #804141;
-    padding: 150px;
+    padding: 110px;
     border-radius: 15px;
     overflow: hidden;
-    background: floralwhite;
+    background: var(--Teal);
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     cursor: default;
     transition: all 400ms ease;
@@ -186,29 +197,77 @@ section#hero {
 
  .inner-container:hover{
     box-shadow: 7px 9px 25px rgba(0,0,0,0.4);
-    transform:  translateX(-1%);
+    transform:  translateX(-2%);
  }
 
  .inner-container h1{
     margin-bottom: 30px;
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 800;
+    color: black;
+    text-shadow: white 1.5px 1.5px 2px;
  }
 
  .text {
-    font-size: 13px;
-    color: #007FEA;
+    font-size: 18px;
+    color: #FFFFFF;
     line-height: 30px;
     text-align: justify;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    text-shadow: black 0.5px 0.5px 1px;
+ }
+
+ .text span {
+    font-family: "Kaushan Script", cursive; 
+    margin-left: 1rem;  
  }
 
  .skills {
     display: flex;
     justify-content: space-between;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 17px;
+    color: #FFFFFF;
+    text-shadow: black 0.5px 0.5px 1px;
  }
+/* WAKO SECTION */
+#wako {
+    min-height: 90vh;
+    background: linear-gradient(#012f3f59,rgba(147, 216, 213, 0.356)), url(/archivos/img/defauld\ plano.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+section#wako {
+/*     margin: 18rem; */
+    height: calc(100vh -60px);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffff;
+}
+
+#wako h1 {
+    font-size: 5rem;
+    text-shadow: var(--MediumTurquoise) 2px 2px 20px;
+    margin-bottom: 4.2rem
+}
+
+#wako p {
+    font-size: 2.1rem;
+    margin-bottom: 4rem
+}
+
+#wako span{
+    font-family: "Kaushan Script", cursive;
+    font-size: 2.6rem;
+}
 
 /* TARJETA DE PRESENTACIÓN */
 
@@ -395,16 +454,18 @@ section#hero {
 @media screen and (max-width:1200px){
     .inner-container{
         padding: 80px;
+        margin-left: 0;
+        
     }
 }
 
 @media screen and (max-width:1000px){
     .about-section{
         background-size: 100%;
-        padding: 100px 40px;
+        padding: 100px 0px;
     }
     .inner-container{
-        width: 100%;
+        width: 105%;
     }
 }
 
