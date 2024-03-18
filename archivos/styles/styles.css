@@ -45,7 +45,7 @@ a:hover {
 
 header {
     position: relative;
-    padding: 1.7rem;
+    padding: 2rem;
 }
 
 .navbar {
@@ -157,12 +157,12 @@ section#hero {
 #hero h1 {
     font-size: 5rem;
     text-shadow: var(--MediumTurquoise) 2px 2px 20px;
-    margin-bottom: 4.2rem
+    margin-bottom: 5rem
 }
 
 #hero p {
     font-size: 2.1rem;
-    margin-bottom: 4rem
+    margin-bottom: 3rem
 }
 
 #hero span{
@@ -175,7 +175,7 @@ section#hero {
  .about-section {
     border-radius: 100rem;
     margin-left: 8rem;
-    background: url(/archivos/img/Icono_full-transformed.jpeg) no-repeat left;
+    background: url(/archivos/assets/Pararroz.webp) no-repeat left;
     background-size: 34%;
 /*     background-color: #012f3f; */
     overflow: hidden;
@@ -272,21 +272,23 @@ section#wako {
 /* TARJETA DE PRESENTACIÓN */
 
 .tarjetas {
-    width: 110%;
+    width: 75%;
     display: flex;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
+    padding: 4rem;
 }
 
 .card {
     width: 100%;
-    margin: 20px;
+    margin: 4rem;
     border-radius: 8px;
     overflow: hidden;
     background: floralwhite;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     cursor: default;
     transition: all 400ms ease;
+
 }
 
 .card:hover {
@@ -295,39 +297,23 @@ section#wako {
 }
 
 .card img {
-    width: 200% ;
-    height: 320px;
+    width: 220% ;
+    height: 300px;
 }
 
 .card .contenido {
-    padding: 15px;
+    padding: 2rem;
     text-align: center;
 }
 
 .card .contenido p {
     line-height: 1.6;
     color: #6e6e6e;
+    font-size: 14px;
 } 
 
-.card .contenido h3 {
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-
-.card .contenido a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: #FEA096;
-    border: 1px solid #FEA096;
-    border-radius: 4px;
-    transition: all 400ms ease;
-}
-
-.card .contenido a:hover {
-    background: #FEA096;
-    color: #FFFFFF;
+.card .contenido h3{
+    font-size: 15px;
 }
 
 /* FOODER DESING */
@@ -348,8 +334,8 @@ section#wako {
 }
 
 .footer-col {
-    width: 25%;
-    padding: 0 15px;
+    width: 30%;
+    padding: 0 9.5rem;
 }
 
 .footer-col h4 {
@@ -477,6 +463,24 @@ section#wako {
         padding: 60px;
     }
 }
+/* Cartas de Presentacion */
+/* @media(min-width: 480px) {
+    .tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+    .card{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+ */
+
+
+
 /* footer container */
 @media(max-width: 767px) {
     .footer-col {
