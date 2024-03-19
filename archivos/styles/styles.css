@@ -273,10 +273,21 @@ section#wako {
 
 .tarjetas {
     width: 75%;
-    display: flex;
+    display: grid; /*Usamos grid para usar el area como una tabla*/
+    grid-template-areas: "card1 card2";
+    justify-items: center;
+    gap: 35px; 
     max-width: 1300px;
     margin: auto;
     padding: 4rem;
+}
+
+.card1{
+    grid-area: card1;
+}
+
+.card2{
+    grid-area: card2;
 }
 
 .card {
@@ -427,6 +438,12 @@ section#wako {
 
     .dropdown_menu {
         display: block;
+    }
+
+    .tarjetas{
+        grid-template-areas: "card1"
+                             "card2";
+        justify-items: center;
     }
 }
 
