@@ -319,8 +319,10 @@ section#wako {
 
 .card .contenido p {
     line-height: 1.6;
-    color: #6e6e6e;
+    color: #5a5959;
     font-size: 14px;
+    text-align: justify;
+    font-weight: 400;
 } 
 
 .card .contenido h3{
