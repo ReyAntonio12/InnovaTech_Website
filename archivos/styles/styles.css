@@ -175,7 +175,7 @@ section#hero {
  .about-section {
     border-radius: 100rem;
     margin-left: 8rem;
-    background: url(/archivos/assets/Pararroz.webp) no-repeat left;
+    background: url(../assets/Pararroz.webp) no-repeat left;
     background-size: 34%;
 /*     background-color: #012f3f; */
     overflow: hidden;
