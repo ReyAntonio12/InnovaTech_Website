@@ -144,8 +144,10 @@ header {
 }
 
 section#hero {
-    margin: 18rem;
+    margin-top: 12rem;
+    margin-block-end: 12rem;
     height: calc(100vh -60px);
+    padding: 5%;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -162,7 +164,8 @@ section#hero {
 
 #hero p {
     font-size: 2.1rem;
-    margin-bottom: 3rem
+    margin-bottom: 3rem;
+    text-shadow: var(--MediumTurquoise) 2px 2px 20px;
 }
 
 #hero span{
@@ -187,7 +190,7 @@ section#hero {
     margin-left: 40rem;
     background-color: #804141;
     padding: 110px;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
     background: var(--Teal);
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
@@ -243,8 +246,8 @@ section#hero {
 }
 
 section#wako {
-/*     margin: 18rem; */
     height: calc(100vh -60px);
+    padding: 5%;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -261,7 +264,8 @@ section#wako {
 
 #wako p {
     font-size: 2.1rem;
-    margin-bottom: 4rem
+    margin-bottom: 4rem;
+    text-shadow: var(--MediumTurquoise) 1.5px 1.5px 10px;
 }
 
 #wako span{
@@ -291,7 +295,7 @@ section#wako {
 }
 
 .card {
-    width: 100%;
+    width: 90%;
     margin: 4rem;
     border-radius: 8px;
     overflow: hidden;
@@ -447,6 +451,10 @@ section#wako {
                              "card2";
         justify-items: center;
     }
+
+    .card{
+        width: 130%;
+    }
 }
 
 @media(max-width: 576px) {
@@ -468,6 +476,7 @@ section#wako {
     .about-section{
         background-size: 100%;
         padding: 100px 0px;
+        margin-right: 12%;
     }
     .inner-container{
         width: 105%;
@@ -482,24 +491,6 @@ section#wako {
         padding: 60px;
     }
 }
-/* Cartas de Presentacion */
-/* @media(min-width: 480px) {
-    .tarjetas{
-        display: flex;
-        flex-wrap: wrap;
-        grid-template-columns: repeat(3,1fr);
-        gap: 15px;
-    }
-    .card{
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-}
- */
-
-
-
 /* footer container */
 @media(max-width: 767px) {
     .footer-col {
