@@ -1,0 +1,66 @@
+:root{
+    /* Paleta Principal */
+    --LightCyan: #D4F0FC;
+    --LightSkyBlue: #89D6FB;
+    --Teal: #02577A;
+    --DarkSlateTeal: #01303F;
+    /* Paleta Secundaria */
+    --MediumTurquoise: #45C4B0;
+    --PaleGreen: #9AEBA3;
+}
+
+/* CONFIGURACIONES GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Kanit', Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: #dfdede;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: ivory;
+    font-size: 2rem;
+}
+
+a:hover {
+    color: var(--LightSkyBlue);
+    transition: all 230ms ease-in-out;
+}
+
+/* PARA MIENTRAS DEJARE ESTO DE AQUI */
+
+body {
+    background: url(../img/defauld\ pano.jpeg);
+}
+
+h1 {
+    font-size: 20rem;
+    font-weight: 600;
+    text-align: center;
+    color: #D4F0FC;
+    text-shadow: #ffffff 1px 1px 10px;
+
+}
+
+p{
+    margin-top: 20rem;
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #60c043;
+    text-shadow: #0a0a0a93 1px 1px 10px;
+}
