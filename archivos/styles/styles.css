@@ -134,7 +134,7 @@ header {
 /* HERO SECTION AND HEADER*/
 header {
     min-height: 90vh;
-    background: linear-gradient(#012f3f59,rgba(147, 216, 213, 0.356)), url(../img/wako.avif);
+    background: linear-gradient(#012f3f59,rgba(147, 216, 213, 0.356)), url(../img/wako.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -233,7 +233,7 @@ section#hero {
 /* WAKO SECTION */
 #wako {
     min-height: 90vh;
-    background: linear-gradient(#012f3f59,rgba(147, 216, 213, 0.356)), url(../img/defauld\ plano.jpeg);
+    background: linear-gradient(#012f3f59,rgba(147, 216, 213, 0.356)), url(../img/defauld\ plano.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
