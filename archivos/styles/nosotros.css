@@ -24,6 +24,8 @@ body{
     font-family: 'Kanit', Arial, Helvetica, sans-serif;
     height: 100%;
     background-color: #dfdede;
+    background: url(../img/plano\ 1.webp) no-repeat ;
+    background-size: 100%;
 }
 
 li {
@@ -41,26 +43,235 @@ a:hover {
     transition: all 230ms ease-in-out;
 }
 
-/* PARA MIENTRAS DEJARE ESTO DE AQUI */
+/* HEADER Y MENU DE NAVEGACION */
 
-body {
-    background: url(../img/plano\ 3.webp);
+header {
+    position: relative;
+    padding: 2rem;
 }
 
-h1 {
-    font-size: 20rem;
-    font-weight: 600;
-    text-align: center;
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 3.5rem;
+}
+
+.navbar .toggle_btn {
     color: #D4F0FC;
-    text-shadow: #ffffff 1px 1px 10px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: var(--MediumTurquoise);
+    color: #FFFFFF;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #FFFFFF;
+    transition: all 300ms ease-in-out;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:active {
+    scale: 1;
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 270px;
+}
+
+.dropdown_menu li {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+/* CARTAS DE PRESENTACION DE PARNERS */
+.cart{ 
+  /*   margin-left: 18rem; */
+    margin: 2rem -15rem 5rem 22.5rem;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 5px;
+    box-shadow: rgba(143, 141, 141, 0.1) 0px 14px 80px;
+    max-width: 450px;
+    max-height: 450px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    position: relative;
+    float: left;
+    justify-content: space-between;
+}
+
+
+.cart h2{
+    margin: 0 1rem;
+    padding: 0 2.5rem;
+    font-size: 17px;
+}
+
+.cart .title{
+    padding: 0.8rem;
+    text-align: right;
+    color: var(--Teal);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+.img-avatar{
+    width: 8.5rem;
+    height: 8.5rem;
+    position: absolute;
+    border-radius: 50%;
+    border: 4.5px solid var(--DarkSlateTeal);
+    top: 12px;
+    left: 85px;
+    box-shadow: #01303F 1px 1px 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-avatar:hover{
+    transform: scale(1.05);
+}
+
+.img-avatar img{
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+
+.portada{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.cart-text{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.title-total{
+    padding: 2.7em 1.7em 1.7em 1.7em;
+}
+
+.path{
+    fill: var(--LightSkyBlue);
+}
+
+.img-portada{
+    width: 100%;
+}
+
+.cart .desc{
+    padding: 2rem 1rem;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.cart .actions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+button{
+    text-shadow: #01303F 0.7px 0.7px 0.5px;
+    border: none;
+    background: none;
+    font-size: 2.3rem;
+    color: var(--Teal);
+    cursor: pointer;
+    transition: 0.6s ease;
 
 }
 
-p{
-    margin-top: 20rem;
-    font-size: 5rem;
-    font-weight: 400;
-    text-align: center;
-    color: #60c043;
-    text-shadow: #0a0a0a93 1px 1px 10px;
+button:hover{
+    color: var(--LightSkyBlue);
+    transform: scale(1.30);
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE DESING */
+/* header barra de navegacion */
+@media(max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
 }

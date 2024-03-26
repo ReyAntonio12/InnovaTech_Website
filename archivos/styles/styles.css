@@ -159,7 +159,7 @@ section#hero {
 #hero h1 {
     font-size: 5rem;
     text-shadow: var(--MediumTurquoise) 2px 2px 20px;
-    margin-bottom: 5rem
+    margin-bottom: 5rem;    
 }
 
 #hero p {
@@ -180,7 +180,6 @@ section#hero {
     margin-left: 8rem;
     background: url(../assets/Pararroz.webp) no-repeat left;
     background-size: 34%;
-/*     background-color: #012f3f; */
     overflow: hidden;
     padding: 45px 0;
 }
