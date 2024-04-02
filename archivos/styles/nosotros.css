@@ -25,7 +25,7 @@ body{
     height: 100%;
     background-color: #95b32c;
     background-size: 100%;
-    background: no-repeat url(../assets/background\ 1.png) fixed;
+    background-color: #a1a0a0;
     background-size: 100%;
 }
 
@@ -180,22 +180,38 @@ section#hero {
 
 /* CARTAS DE PRESENTACION DE PARNERS */
 .margen{
-    margin: 20rem;
-    margin-top: 5rem;
-    margin-block-end: 10rem;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
+    margin: 10%;
+    margin-top: 2rem;
+    margin-block-end: 5rem;
+    justify-items: center;
+    display: grid;
+    grid-template-areas: "cart1 cart2" "cart3 cart4";
+    gap: 35px;
+    max-width: 1300px;
+}
+
+.cart1{
+    grid-area: cart1;
+}
+
+.cart2{
+    grid-area: cart2;
+}
+
+.cart3{
+    grid-area: cart3;
+}
+
+.cart4{
+    grid-area: cart4;
 }
 
 .cart{ 
     background-color: #FFFFFF;
     border: 5px;
     box-shadow: rgba(0, 0, 0, 0.281) 14px 14px 8px;
-    max-width: 450px;
-    max-height: 450px;
+    max-width: 45rem;
+    max-height: 50rem;
     border-radius: 15px;
     position: relative;
     margin-top: 3rem;
@@ -413,6 +429,25 @@ button:hover{
     .dropdown_menu {
         display: block;
     }
+
+    .margen{
+        grid-template-areas:"cart1"
+        "cart2" "cart3" "cart4";
+        justify-items: center;
+        display: grid;
+        margin-left: 10%;
+    }
+
+    .cart{
+        width: 125%;
+        height: 84%;
+    }
+
+    .portada img{
+        width: 94%;
+        height: 94%;
+    }
+
 }
 
 /* footer container */
