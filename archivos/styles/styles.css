@@ -109,7 +109,7 @@ header {
 .action_btn{
     animation: float 1.8s ease-in-out infinite;
 }
-
+/* INICIO DE OTRA SECCION */
 .action_btnc{
     background-color: var(--MediumTurquoise);
     color: #FFFFFF;
