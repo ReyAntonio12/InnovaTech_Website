@@ -502,6 +502,10 @@ button:hover{
     .dropdown_menu {
         display: block;
     }
+
+    #hero p{
+        text-align: justify;
+    }
 }
 
 @media(max-width: 950px) {

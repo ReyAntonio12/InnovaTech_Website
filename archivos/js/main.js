@@ -10,3 +10,16 @@ toggleBtn.onclick = function (params) {
         ? 'fa-solid fa-xmark'
         : 'fa-solid fa-bars'
     }
+
+const tira = document.querySelectorAll('.tira');
+
+tira.forEach(tira => {
+    tira.addEventListener('click', () => {
+        removeActiveClass();
+        tira.classList.add('active');
+    });
+});
+
+function removeActiveClass() {
+    tira.forEach(tira => tira.classList.remove('active'));
+}

@@ -300,13 +300,13 @@ section#wako {
     font-size: 2.1rem;
     margin-bottom: 4rem;
     text-shadow: var(--MediumTurquoise) 1.5px 1.5px 10px;
+    margin-inline-end: 0;
 }
 
 #wako span{
     font-family: "Kaushan Script", cursive;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
 }
-
 /* TARJETA DE PRESENTACIÓN */
 
 .tarjetas {
@@ -490,6 +490,14 @@ section#wako {
         display: block;
     }
 
+    #hero h1{
+        font-size: 4.1rem;
+    }
+
+    #hero p{
+        font-size: 2rem;
+    }
+
     .tarjetas{
         grid-template-areas: "card1"
                              "card2";
@@ -519,7 +527,7 @@ section#wako {
     .about-section{
         background-size: 100%;
         padding: 100px 0px;
-        margin-right: 10%;
+        margin-right: 20%;  /* toke esto */
     }
     .inner-container{
         width: 105%;
@@ -531,17 +539,47 @@ section#wako {
         padding: 0px;
     }
     .inner-container{
-        padding: 60px;
+        padding: 60px 20px 60px 20px;
     }
+
+    .text{
+        font-size: 15px;
+        padding-right: 1rem;
+    }
+
     .skills{
         display: block;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 1rem;
     }
     .skills span{
         line-height: 4.5rem;
+        font-size: 16px;
     }
+}
+/* Wako section*/
+@media(max-width: 992px) {
+    #wako h1{
+        font-size: 4.1rem; 
+    }
+
+    #wako p{
+        font-size: 2rem;
+        text-align: justify;
+        margin-block-end: 0;
+    }
+
+    #wako spa{
+        text-align: right;
+        margin-right: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+
+
 }
 /* footer container */
 @media(max-width: 767px) {
