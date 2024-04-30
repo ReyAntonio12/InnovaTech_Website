@@ -43,7 +43,44 @@ a:hover {
     color: var(--LightSkyBlue);
     transition: all 230ms ease-in-out;
 }
+/* PRELOADER SCREEN */
+.load{
+    background: var(--DarkSlateTeal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    transition: opacity 1.15s, visibility 1.15s;
+}
 
+.load--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    display: inline-block;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 5px solid #Fff;
+    top: 50%;
+    animation: loader 2s infinite ease;
+}
+  
+  .loader-inner {
+    vertical-align: top;
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    animation: loader-inner 2s infinite ease-in;
+  }
 /* HEADER Y MENU DE NAVEGACION */
 
 header {
@@ -174,7 +211,7 @@ header {
 /* HERO SECTION AND HEADER*/
 header {
     min-height: 90vh;
-    background: linear-gradient(#2b2a2a9d,rgba(98, 99, 99, 0.562)), url(../img/Plano\ 4.webp);
+    background: linear-gradient(#2b2a2aa4,rgba(98, 99, 99, 0.596)), url(../assets/H4.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -198,19 +235,19 @@ section#hero {
 
 #hero h1 {
     font-size: 5rem;
-    text-shadow: var(--MediumTurquoise) 2px 2px 20px;
+    text-shadow: var(--MediumTurquoise) 2px 2px 2.5px;
     margin-bottom: 5rem;    
 }
 
 #hero p {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     margin-bottom: 3rem;
-    text-shadow: var(--MediumTurquoise) 2px 2px 20px;
+    text-shadow: var(--MediumTurquoise) 0.5px 0.5px 1px;
 }
 
 #hero span{
     font-family: "Kaushan Script", cursive;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
 }
 
 
@@ -359,7 +396,7 @@ img{
 }
 
 button{
-    text-shadow: #01303F 0.7px 0.7px 0.5px;
+    text-shadow: #047297 0.7px 0.7px 0.5px;
     border: none;
     background: none;
     font-size: 2.3rem;
@@ -477,6 +514,51 @@ button:hover{
 }
 
 /* ANIMACIONES >:V */
+
+@keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    25% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    75% {
+      transform: rotate(360deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+    
+    25% {
+      height: 0%;
+    }
+    
+    50% {
+      height: 100%;
+    }
+    
+    75% {
+      height: 100%;
+    }
+    
+    100% {
+      height: 0%;
+    }
+  }
+
 @keyframes shake {
     0% { transform: translate(0, 0); }
     10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 5px); }

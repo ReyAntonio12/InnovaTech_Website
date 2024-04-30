@@ -1,4 +1,8 @@
-    /*AMVURGUESA DE NAV BAR  */
+   /* PRELOADER SCREEN */
+window.addEventListener('load', () => {
+    document.querySelector('.load').classList.add('load--hidden');
+});
+   /*AMVURGUESA DE NAV BAR  */
 
 const toggleBtn = document.querySelector('.toggle_btn')
 const toggleBtnIcon = document.querySelector('.toggle_btn i')
