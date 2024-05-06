@@ -179,14 +179,55 @@ header {
     display: flex;
     justify-content: center;
 }
+/* HERO SECTION AND HEADER*/
+header {
+    min-height: 90vh;
+    background: linear-gradient(#2b2a2aa4,rgba(98, 99, 99, 0.596)), url(../assets/H5.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+section#hero {
+    margin-top: 12rem;
+    margin-block-end: 12rem;
+    height: calc(100vh -60px);
+    padding: 5%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffff;
+}
+
+#hero h1 {
+    font-size: 5rem;
+    text-shadow: var(--MediumTurquoise) 2px 2px 2.5px;
+    margin-bottom: 5rem;    
+}
+
+#hero p {
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+    text-shadow: var(--MediumTurquoise) 0.5px 0.5px 1px;
+}
+
+#hero span{
+    font-family: "Kaushan Script", cursive;
+    font-size: 2.8rem;
+}
+
 
 /* SERVICIOS Y PRODUCTOS */
 
 .contain{
     padding: 2rem;
     display: flex;
-    width: 90vw;
-    margin-left: 5rem;
+    width: 81vw;
+    margin-left: 10%;
     overflow: hidden;
 }
 
@@ -211,6 +252,7 @@ header {
     bottom: 100px;
     left: 40px;
     opacity: 0;
+    text-shadow: var(--DarkSlateTeal) 1.2px 1.2px 1px;
 }
 
 .tira.active{
@@ -353,7 +395,32 @@ header {
     .dropdown_menu {
         display: block;
     }
+
+    #hero h1{
+        font-size: 4rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
+/* barra movil servicios */
+@media(max-width: 762px){
+    .contain {
+        align-content: center;
+        display: grid;
+        grid-template-areas: "cart1" "cart2" "cart3" "cart4" "cart5";
+        gap: 35px;
+    }
+    .tira{
+        flex-direction: row;
+        transition: none            ;
+    }
+    .tira.active h3{
+        opacity: 1;
+        transition: opacity 0.3s ease-in 0.5s;
+    }
+}
+
 
 /* footer container */
 @media(max-width: 767px) {
@@ -368,3 +435,4 @@ header {
         width: 100%;
     }
 }
+
